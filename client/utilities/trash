@@ -1,0 +1,36 @@
+ {/* {products.map((product) => {
+        return <p>{product.title}</p>;
+      })} */}
+      {/* {response.data} */}
+      {/* {console.log(users)}
+      <h1>Hello {username}</h1>
+      {role == "user" && <div>Phones</div>}
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+        </tr>
+        {users.map((user) => {
+          return (
+            <tr>
+              <td>{user.name}</td>
+              <td>{user.role}</td>
+            </tr>
+          );
+        })}
+      </table>
+
+      <button onClick={logout}>Logout</button> */}
+
+
+      <nav>
+        {user.length > 0 ? (
+          <Link to="/dashboard"></Link>
+        ) : (
+          <>
+            <Link to="/login">Login</Link>
+            <Link to="/signup">Signup</Link>
+          </>
+        )}
+        <Link to="/phones"></Link>
+      </nav>
